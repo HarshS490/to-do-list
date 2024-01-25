@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container p-4 w-2/4 bg-slate-800 h-auto m-auto mt-[calc(0.5*40vh)] rounded-lg min-w-max" id="container">
+            <div class="flex mb-2 gap-2 flex-col sm:flex-row ">
+                <input type="text" placeholder="to do.." name="to-do" id="inputbox" class="inputbox w-full rounded-xl h-10 p-1 min-w-min">
+
+                <button class="submit btn p-2 bg-gray-700 rounded-xl  text-white hover:bg-slate-500 hover:text-gray-900 active:shadow-md active:shadow-black min-w-max" id="submit">Save</button>
+            </div>
+            <div class="todolist flex flex-col gap-2 min-w-max" id="todolist">
+                <div class="todo1 flex justify-between  align-middle w-full min-w-max rounded-xl  p-2 bg-slate-300 gap-1" id="todo1">
+                    <div class="content w-1/2 flex ">
+                        <input type="checkbox" class="checkbox w-5 " >
+                    
+                        <span class=" p-2 inline-block ">
+                            hello2
+                        </span>
+                    </div>
+                    <div class="edit-buttons flex gap-1">
+                        <button class="edit bg-sky-800 rounded-xl rounded-br-xl p-2  text-white hover:bg-slate-500 hover:text-gray-900 active:shadow-md active:shadow-black ">Edit</button>
+                        <button class="delete bg-sky-800 rounded-xl rounded-br-xl p-2  text-white hover:bg-slate-500 hover:text-gray-900 active:shadow-md active:shadow-black ">Done</button>
+
+                    </div>
+                </div>
+            </div>
+            <script src="script.js"></script>
+        </div>
+        
+    </body>
+</html>

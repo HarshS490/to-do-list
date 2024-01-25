@@ -1,0 +1,29 @@
+/* 
+<div class="todo flex justify-between align-middle w-full rounded-xl  p-2 bg-slate-300 gap-1" id="todo">
+        <div class="content w-1/2 flex ">
+            <input type="checkbox" class="w-5">
+                    
+            <span class="task p-2 inline-block">
+                hello2
+            </span>
+        </div>
+        <button class="delete bg-sky-800 rounded-xl rounded-br-xl p-2  text-white hover:bg-slate-500 hover:text-gray-900 active:shadow-md active:shadow-black ">Delete</button>
+
+    </div>
+*/
+.task{
+    position: relative;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    /* width: 100%; */
+}
+.strike::after{
+    position: absolute;
+    content: "";
+    width: 98%;
+    height: 1px;
+    background-color: #110e0e;
+    top: 21px;
+    left: 5px;
+}
+
